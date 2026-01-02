@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JessHome</string>
+
+    <!-- Bottom tabs -->
+    <string name="tab_device">设备</string>
+    <string name="tab_square">广场</string>
+    <string name="tab_community">社区</string>
+    <string name="tab_mall">商城</string>
+    <string name="tab_profile">我的</string>
+</resources>

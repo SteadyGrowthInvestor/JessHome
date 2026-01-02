@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="红外线"
+            android:textColor="#111111"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="红外模式：请先粘贴你空调可用的 raw 波形（微秒数组），然后点开/关机发射。"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_ir_raw_on"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:gravity="top|start"
+            android:hint="粘贴【开机】raw 波形，例如：9000,4500,560,560,..."
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#9AA0A6"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_ir_raw_off"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="top|start"
+            android:hint="粘贴【关机】raw 波形，例如：9000,4500,560,560,..."
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#9AA0A6"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_ir_freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:hint="载波频率（Hz），常见 38000"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#111111"
+            android:textColorHint="#9AA0A6"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_candidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="当前候选码：未选择"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_prev_candidate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上一组候选码" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_next_candidate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下一组候选码" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_ir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="保存红外码（本机）" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_gree_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="格力开机" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_gree_off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="格力关机" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F5F5F5"
+            android:padding="12dp"
+            android:text="（这里会显示调试信息：hex/发射结果等）"
+            android:textColor="#111111"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
+
+

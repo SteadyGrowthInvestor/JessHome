@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Bold "J" in Govee brand blue -->
+    <path
+        android:fillColor="#00ACE7"
+        android:fillType="evenOdd"
+        android:pathData="M68,26H52C49.791,26 48,27.791 48,30C48,32.209 49.791,34 52,34H60V67C60,74.18 54.18,80 47,80C39.82,80 34,74.18 34,67V64C34,61.791 32.209,60 30,60C27.791,60 26,61.791 26,64V67C26,78.598 35.402,88 47,88C58.598,88 68,78.598 68,67Z" />
+</vector>

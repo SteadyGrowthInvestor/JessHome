@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llQuick"
+    android:layout_width="0dp"
+    android:layout_height="110dp"
+    android:layout_marginEnd="8dp"
+    android:layout_weight="1"
+    android:background="@mipmap/new_profile_btn_replacement"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_quick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="快捷"
+        android:layout_marginBottom="20dp"
+        android:textColor="#222222"
+        android:textSize="13sp" />
+</LinearLayout>

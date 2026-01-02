@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:minHeight="100dp">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="照片" />
+
+    <!-- 选中遮罩层 -->
+    <View
+        android:id="@+id/v_selected_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:visibility="gone" />
+
+    <!-- 选中标记 -->
+    <ImageView
+        android:id="@+id/iv_selected_check"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_check_selected"
+        android:background="@drawable/bg_check_circle"
+        android:visibility="gone"
+        android:contentDescription="已选中" />
+
+    <!-- 视频图标（如果是视频） -->
+    <ImageView
+        android:id="@+id/iv_video_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="6dp"
+        android:src="@android:drawable/ic_media_play"
+        android:background="#80000000"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:contentDescription="视频" />
+
+</FrameLayout>
+

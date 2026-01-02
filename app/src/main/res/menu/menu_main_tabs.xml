@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_device"
+        android:icon="@drawable/selector_tab_device"
+        android:title="@string/tab_device" />
+
+    <item
+        android:id="@+id/tab_square"
+        android:icon="@drawable/selector_tab_square"
+        android:title="@string/tab_square" />
+
+    <item
+        android:id="@+id/tab_community"
+        android:icon="@drawable/selector_tab_community"
+        android:title="@string/tab_community" />
+
+    <item
+        android:id="@+id/tab_mall"
+        android:icon="@drawable/selector_tab_mall"
+        android:title="@string/tab_mall" />
+
+    <item
+        android:id="@+id/tab_profile"
+        android:icon="@drawable/selector_tab_profile"
+        android:title="@string/tab_profile" />
+</menu>

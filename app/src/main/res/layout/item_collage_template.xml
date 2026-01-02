@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:minWidth="80dp">
+
+    <ImageView
+        android:id="@+id/iv_template_preview"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0"
+        android:contentDescription="模板预览" />
+
+    <TextView
+        android:id="@+id/tv_template_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="模板名称"
+        android:textSize="12sp"
+        android:textColor="#666666" />
+
+</LinearLayout>
+

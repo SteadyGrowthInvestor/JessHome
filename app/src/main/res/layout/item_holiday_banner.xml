@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_holiday_banner"
+    android:clipToOutline="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2025 MERRY\nCHRISTMAS"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_apply_holiday"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_btn_apply_white"
+        android:gravity="center"
+        android:text="应用"
+        android:textColor="#FF3B30"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</FrameLayout>
